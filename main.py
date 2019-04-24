@@ -7,14 +7,13 @@ db_connect = sqlite3.connect('pharmacy.db')
 db_cursor = db_connect.cursor()
 
 # Creation de table huiles-essentielles
-#db_cursor.execute('''CREATE TABLE huiles-essentielles
-#             (nom, type, pourquoi , comment, temps)''')
+# db_cursor.execute('''CREATE TABLE medicaments (nom, type, pourquoi , comment, duree)''')
 
 # Insert a row of data
-#db_cursor.execute("INSERT INTO huiles-essentielles VALUES ('lavandin','detente','lessive','3 gouttes dans la lessive','quand besoin est')")
+db_cursor.execute("INSERT INTO medicaments VALUES ('doliprane','anti douleurs','douleurs','none','maximum 4jours')")
 
 # Save (commit) the changes
-#db_cursor.commit()
+db_cursor.commit()
 db_cursor.close()
 
 # Fonction d'accueil
