@@ -13,7 +13,7 @@ db_cursor = db_connect.cursor()
 db_cursor.execute("INSERT INTO medicaments VALUES ('doliprane','anti douleurs','douleurs','none','maximum 4jours')")
 
 # Save (commit) the changes
-db_cursor.commit()
+db_connect.commit()
 db_cursor.close()
 
 # Fonction d'accueil
